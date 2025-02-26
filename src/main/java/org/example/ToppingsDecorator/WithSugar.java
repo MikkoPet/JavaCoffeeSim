@@ -3,7 +3,7 @@ package org.example.ToppingsDecorator;
 import org.example.coffeeFactory.Coffee;
 import org.example.coffeeFactory.ICoffee;
 
-public class WithSugar implements Topping {
+public class WithSugar implements ICoffee {
 
     private final ICoffee coffee;
 
