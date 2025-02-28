@@ -8,7 +8,7 @@ testmanager:
   stage: test
   script:
     - echo 'Testing manager'
-    - src/test/java/org/exemple/CoffeeManagerTester.java
+    - mvn -Dtest=CoffeeManagerTester test
 
 build_prod:
   stage: build
