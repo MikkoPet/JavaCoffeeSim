@@ -10,6 +10,12 @@ testmanager:
     - echo 'Testing manager'
     - mvn -Dtest=CoffeeManagerTester test
 
+testfactory:
+  stage: test
+  script:
+    - echo 'Testing factory'
+    - mvn -Dtest=CoffeeFactoryTester test
+
 build_prod:
   stage: build
   script: 
