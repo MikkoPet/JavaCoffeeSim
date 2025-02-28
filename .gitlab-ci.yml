@@ -18,7 +18,7 @@ build_prod:
   artifacts:
     paths:
       - coffeesim_artifact.zip
-      expire_in: 1 week
+    expire_in: 1 week
 
 
 
