@@ -1,8 +1,8 @@
 image: java:latest
 
 stages:
+  - test
   - build
-  - execute
 
 test:
   stage: test
