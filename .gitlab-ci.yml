@@ -4,10 +4,11 @@ stages:
   - test
   - build
 
-test:
+testmanager:
   stage: test
   script:
-    - echo 'Executing testing script to be added'
+    - echo 'Testing manager'
+    - src/test/java/org/exemple/CoffeeManagerTester.java
 
 build_prod:
   stage: build
