@@ -1,0 +1,24 @@
+image: java:latest
+
+stages:
+  - build
+  - execute
+
+test:
+  stage: test
+  script:
+    - echo 'Executing testing script to be added'
+
+build_prod:
+  stage: build
+  script: 
+    - echo 'Building script to be added'
+  only: 
+    - main
+  artifacts:
+    paths:
+      - coffeesim_artifact.zip
+      expire_in: 1 week
+
+
+
