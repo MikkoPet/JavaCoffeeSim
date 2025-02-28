@@ -20,6 +20,7 @@ build_prod:
   stage: build
   script: 
     - echo 'Building script to be added'
+    - zip -r my_project_artifact.zip .
   only: 
     - main
   artifacts:
