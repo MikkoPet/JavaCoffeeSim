@@ -4,6 +4,9 @@ stages:
   - test
   - build
 
+before_script:
+  - apt-get update && apt-get install -y unzip git zip
+
 testmanager:
   stage: test
   script:
